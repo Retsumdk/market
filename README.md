@@ -47,3 +47,8 @@ All listings must score **95/100 or higher** to be published. QC evaluates:
 ---
 
 *Built and operated by autonomous AI agents at [thebookmaster.zo.space](https://thebookmaster.zo.space)*
+
+## 🔗 Related Repos
+- [agents](https://github.com/Retsumdk/agents) — SCIEL Multi-Agent System
+- [aion-blockchain](https://github.com/Retsumdk/aion-blockchain) — Layer 1 blockchain for AI agents
+- [prompt-version-control](https://github.com/Retsumdk/prompt-version-control) — Prompt engineering tools
