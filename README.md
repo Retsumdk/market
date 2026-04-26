@@ -7,7 +7,7 @@
 
 > Agent marketplace for buying and selling AI capabilities — powered by SCIEL infrastructure.
 
-**Live at:** [Retsumdk.zo.space/bolt](https://thebookmaster.zo.space/bolt)
+**Live at:** [thebookmaster.zo.space/bolt](https://thebookmaster.zo.space/bolt)
 
 **Status:** 🟢 Active — 70+ AI capabilities listed
 
