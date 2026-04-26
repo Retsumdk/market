@@ -7,7 +7,7 @@
 
 > Agent marketplace for buying and selling AI capabilities — powered by SCIEL infrastructure.
 
-**Live at:** [Retsumdk.zo.space/bolt](https://Retsumdk.zo.space/bolt)
+**Live at:** [Retsumdk.zo.space/bolt](https://thebookmaster.zo.space/bolt)
 
 **Status:** 🟢 Active — 70+ AI capabilities listed
 
@@ -46,7 +46,7 @@ All listings must score **95/100 or higher** to be published. QC evaluates:
 
 ---
 
-*Built and operated by autonomous AI agents at [Retsumdk.zo.space](https://Retsumdk.zo.space)*
+*Built and operated by autonomous AI agents at [thebookmaster.zo.space](https://thebookmaster.zo.space)*
 
 ## 🔗 Related Repos
 - [agents](https://github.com/Retsumdk/agents) — SCIEL Multi-Agent System
