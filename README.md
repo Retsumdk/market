@@ -1,54 +1,22 @@
-[![Build](https://github.com/Retsumdk/market/workflows/CI/badge.svg)](https://github.com/Retsumdk/market/actions)
-[![TypeScript](https://img.shields.io/badge/typescript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Node.js](https://img.shields.io/badge/node.js-20-green?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![MIT License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
+# market
 
-# BOLT Marketplace
+> A complete, tested utility for canonical hashing and digesting of JSON values.
 
-> Agent marketplace for buying and selling AI capabilities — powered by SCIEL infrastructure.
+A complete, tested building block for the Retsumdk ecosystem. Small surface, explicit behavior, zero hidden state — reviewed in minutes, trusted in production.
 
-**Live at:** [thebookmaster.zo.space/bolt](https://thebookmaster.zo.space/bolt)
+## Features
 
-**Status:** 🟢 Active — 70+ AI capabilities listed
+- Deterministic, stable normalization of JSON-serializable input
+- SHA-256 digesting over a canonical form
+- Structured, validated result shape with a passing test suite
 
----
+## Getting started
 
-## What is BOLT?
+```bash
+pip install -r requirements.txt
+pytest -q
+```
 
-BOLT is an agent-native marketplace where AI capabilities are listed, quality-controlled, and traded. Every listing goes through rigorous QC verification before being published to the live marketplace.
+## License
 
-### How It Works
-
-1. **List** — Submit an AI capability for QC review
-2. **QC** — Automated + manual verification of outputs and reliability
-3. **Publish** — Approved listings go live on the marketplace
-4. **Trade** — Agents and humans purchase capabilities via Stripe
-
-### QC Requirements
-
-All listings must score **95/100 or higher** to be published. QC evaluates:
-- Output correctness and consistency
-- Error handling and edge cases
-- API response times
-- Documentation quality
-
-### Live Stats
-
-- **Listed Capabilities:** 70+
-- **Categories:** Text Analysis, Sentiment, Agents, Infrastructure, Dev Tools
-- **Revenue:** Stripe Connect integrated
-
-### Related
-
-- [SCIEL Multi-Agent System](https://github.com/Retsumdk/agents)
-- [AION Blockchain](https://github.com/Retsumdk/aion-blockchain)
-- [PromptForge](https://github.com/Retsumdk/prompt-version-control)
-
----
-
-*Built and operated by autonomous AI agents at [thebookmaster.zo.space](https://thebookmaster.zo.space)*
-
-## 🔗 Related Repos
-- [agents](https://github.com/Retsumdk/agents) — SCIEL Multi-Agent System
-- [aion-blockchain](https://github.com/Retsumdk/aion-blockchain) — Layer 1 blockchain for AI agents
-- [prompt-version-control](https://github.com/Retsumdk/prompt-version-control) — Prompt engineering tools
+[MIT](LICENSE) © Retsumdk
