@@ -1,14 +1,37 @@
-from market import digest, normalize, run
+from order_book import OrderBook
 
-def test_normalize_deterministic():
-    assert normalize({'b': 1, 'a': 2}) == normalize({'a': 2, 'b': 1})
 
-def test_digest_stable():
-    assert digest('x') == digest('x')
-    assert digest({'k': 'v'}) == digest({'k': 'v'})
+def test_crossing_orders_match_at_best_price():
+    book = OrderBook()
+    book.place("b1", "buy", price=100, qty=5)
+    book.place("s1", "sell", price=95, qty=3)
+    result = book.match()
+    assert len(result["trades"]) == 1
+    assert result["trades"][0]["price"] == 95
+    assert result["trades"][0]["qty"] == 3
 
-def test_run_shapes_result():
-    out = run({'hello': 'world'})
-    assert out['input_type'] == 'dict'
-    assert out['length'] > 0
-    assert len(out['digest']) == 64
+
+def test_partial_fill_leaves_resting_quantity():
+    book = OrderBook()
+    book.place("b1", "buy", price=100, qty=5)
+    book.place("s1", "sell", price=90, qty=2)
+    book.match()
+    # buy order should have 3 remaining
+    bids = book.snapshot()["bids"]
+    assert sum(o["qty"] for o in bids) == 3
+
+
+def test_no_cross_no_trade():
+    book = OrderBook()
+    book.place("b1", "buy", price=80, qty=5)
+    book.place("s1", "sell", price=90, qty=5)
+    assert book.match()["trades"] == []
+    assert len(book.snapshot()["bids"]) == 1
+    assert len(book.snapshot()["asks"]) == 1
+
+
+def test_cancel_removes_order():
+    book = OrderBook()
+    book.place("b1", "buy", price=100, qty=5)
+    assert book.cancel("b1") is True
+    assert book.snapshot()["bids"] == []

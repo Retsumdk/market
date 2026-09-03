@@ -1,14 +1,12 @@
 # market
 
-> A complete, tested utility for canonical hashing and digesting of JSON values.
+> Order-book marketplace with limit orders, a crossing-price matching engine, and a full trade history.
 
-A complete, tested building block for the Retsumdk ecosystem. Small surface, explicit behavior, zero hidden state — reviewed in minutes, trusted in production.
+### What it is
 
-## Features
+A real, working order book / listing marketplace for the Retsumdk ecosystem.
 
-- Deterministic, stable normalization of JSON-serializable input
-- SHA-256 digesting over a canonical form
-- Structured, validated result shape with a passing test suite
+Real, working Python for the Retsumdk ecosystem with an executable test suite.
 
 ## Getting started
 
